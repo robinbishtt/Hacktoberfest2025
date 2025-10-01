@@ -1,36 +1,19 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@font-face {
-    font-family: font1;
-    src: url(../public/fonts/Lausanne-300.woff2);
-}
-@font-face {
-    font-family: font2;
-    src: url(../public/fonts/Lausanne-500.woff2);
-}
-
-
-.moveX{
-    animation-name: moveAnimation;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+body {
+  /* background-color: #fd2c2a; */
+  transition: all cubic-bezier(0.23, 1, 0.32, 1) 1s;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
-.moveLink{
-    opacity: 0;
-    transition: all ease 0.3s;
+canvas {
+  pointer-events: none;
 }
 
-.link:hover .moveLink{
-    opacity: 1;
-}
-
-@keyframes moveAnimation {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-100%);
-    }
+span.growing {
+  background-color: #fd2c2a;
 }
