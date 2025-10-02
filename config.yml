@@ -1,0 +1,15 @@
+tickers: ["AAPL","MSFT","TSLA","NVDA"]
+newsapi_key: "YOUR_NEWSAPI_KEY"
+telegram:
+  token: "..."
+  chat_id: "..."
+smtp:
+  host: "smtp.gmail.com"
+  port: 587
+  user: "you@example.com"
+  pass: "app-password"
+  from: "you@example.com"
+  to: "destination@example.com"
+webhook_url: "https://hooks.example.com/..."
+db:
+  sqlite_path: "devodyssey_toolkit.db"
